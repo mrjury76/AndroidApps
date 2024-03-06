@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cities">
+        <item>Kamloops</item>
+        <item>Vancouver</item>
+        <item>Kelowna</item>
+        <item>Toronto</item>
+        <item>Montreal</item>
+    </string-array>
+</resources>

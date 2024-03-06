@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Assignment1</string>
+    <string name="power">^</string>
+    <string name="multiplication">*</string>
+    <string name="division">/</string>
+    <string name="subtraction">-</string>
+    <string name="modulus">Modulus</string>
+    <string name="percent">%</string>
+    <string name="addition">+</string>
+    <string name="clear">CLEAR</string>
+    <string name="number1">Number 1:</string>
+    <string name="number2">Number 2:</string>
+    <string name="input1">Number 1</string>
+    <string name="input2">Number 2</string>
+    <string name="divide_by_zero">Cannot divide by zero</string>
+</resources>

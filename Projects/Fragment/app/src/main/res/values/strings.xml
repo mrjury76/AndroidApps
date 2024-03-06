@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Fragment</string>
+    <string name="this_is_the_sports_fragment">this is the sports fragment ;)</string>
+    <string name="this_is_the_tech_fragement">this is the TECH fragement</string>
+    <string name="this_is_the_top_stories_fragment">this is the top stories fragment</string>
+    <string name="sports">Sports</string>
+    <string name="technology">Technology</string>
+    <string name="top_stories">Top Stories</string>
+    <string name="button">Button</string>
+    <string name="this_is_a_button">This is a button</string>
+</resources>
