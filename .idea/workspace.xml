@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d17adf0d-60bd-4ebf-8d98-1a3a76483690" name="Changes" comment="" />
+    <list default="true" id="d17adf0d-60bd-4ebf-8d98-1a3a76483690" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/MajorAssingment2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MajorAssingment2/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MajorAssingment2/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MajorAssingment2/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MajorAssingment2/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MajorAssingment2/.idea/migrations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MajorAssingment2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MajorAssingment2/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Midterm2/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Midterm2/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Midterm2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Midterm2/.idea/misc.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,9 +28,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2dKzi3CQykhWcIwrAOikrTadr57" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -31,7 +43,8 @@
     "RunOnceActivity.cidr.known.project.marker": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main"
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/mrjur/OneDrive/Desktop/COMP2160MobileAppDevelopment/AndroidApps"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
