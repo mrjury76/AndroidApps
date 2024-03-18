@@ -1,20 +1,25 @@
 package com.example.majorassignment2;
 
 import android.content.Context;
+import android.graphics.drawable.ColorDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHolder> {
 
-    //declaring application context and an arraylist with moviecard generic type
+    //declaring variables, application context and an arraylist with MovieCard generic type
+    final int MAX = 2;
+    int counter = 0;
     Context context;
     ArrayList<MovieCard> arrayList;
 
@@ -33,12 +38,39 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
         return new MovieViewHolder(itemView);
     }
 
-    //onBindViewHolder binds the data from the array into the movieviewholder class i created.
+    //onBindViewHolder binds the data from the array into the MovieViewHolder class i created.
     @Override
     public void onBindViewHolder(@NonNull MovieViewHolder holder, int position) {
         holder.image.setImageResource(arrayList.get(position).image);
         holder.title.setText(arrayList.get(position).title);
         holder.showingDates.setText(arrayList.get(position).showingDates);
+
+        //creates an on long click listener on the entire view with colour changing logic
+        holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+            public boolean onLongClick(View v) {
+                int backgroundColor = ((ColorDrawable) holder.title.getBackground()).getColor();
+
+                    //if the background color is red then this "unselects" the movie.
+                    if (backgroundColor == ContextCompat.getColor(context, R.color.red)) {
+                        holder.title.setBackgroundColor(ContextCompat.getColor(context, R.color.blue));
+                        holder.showingDates.setBackgroundColor(ContextCompat.getColor(context, R.color.blue));
+                        Toast.makeText(context, "You have unselected: " + holder.title.getText().toString(), Toast.LENGTH_SHORT).show();
+                        counter -= 1;
+                    } else {
+                        //if not unselecting a movie, this selects one. But if the counter is 2 you cannot pick another movie.
+                        if(counter >= MAX) {
+                            Toast.makeText(context, "Cannot pick more than 2 movies", Toast.LENGTH_SHORT).show();
+                        } else {
+                             // If red, change back to blue
+                             holder.title.setBackgroundColor(ContextCompat.getColor(context, R.color.red));
+                             holder.showingDates.setBackgroundColor(ContextCompat.getColor(context, R.color.red));
+                             Toast.makeText(context, "You have selected: " + holder.title.getText().toString(), Toast.LENGTH_SHORT).show();
+                            counter += 1;
+                        }
+                    }
+                return true;
+            }
+        });
     }
 
     //simply returns the array size
@@ -47,9 +79,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
         return arrayList.size();
     }
 
-
-
-    //custom class that extends the recycler view holder that assigns the moviecard data to this view
+    //custom class that extends the recycler view holder that assigns the MovieCard data to this view
     public static class MovieViewHolder extends RecyclerView.ViewHolder{
         TextView title,showingDates;
         ImageView image;
