@@ -9,8 +9,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/movieRecyclerView"
-        android:layout_width="386dp"
-        android:layout_height="249dp"
+        android:layout_width="400dp"
+        android:layout_height="254dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -20,10 +20,12 @@
 
     <TextView
         android:id="@+id/displayTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="374dp"
+        android:layout_height="120dp"
         android:layout_marginBottom="97dp"
+        android:gravity="center"
         android:text="@string/pick_2_movies"
+        android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="@+id/movieRecyclerView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

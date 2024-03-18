@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">MajorAssignment2</string>
     <string name="movie_card">Movie Card</string>
-    <string name="pick_2_movies">Pick 2 Movies:</string>
+    <string name="pick_2_movies">Pick 2 Movies:\n Long click to select and unselect</string>
 </resources>

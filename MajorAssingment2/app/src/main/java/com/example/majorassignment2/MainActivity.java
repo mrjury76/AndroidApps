@@ -1,6 +1,8 @@
 package com.example.majorassignment2;
 
 import android.annotation.SuppressLint;
+import android.app.Service;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -28,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        Intent backgroundMusicIntent = new Intent(MainActivity.this, BackgroundMusic.class);
+        startService(backgroundMusicIntent);
 
         RecyclerView recyclerView = findViewById(R.id.movieRecyclerView);
 
